@@ -40,10 +40,10 @@ public class Task {
     @Column(name = "updated", nullable = false)
     private LocalDateTime updated;
 
-    public Task() {
+    public Task(UUID id, String title, String description, LocalDateTime localDateTime, TaskStatus status, TaskPriority priority, Object o, Object object, Object o1) {
     }
 
-    public Task(UUID id, String title, String description, LocalDateTime dueDate, TaskStatus status, TaskPriority priority, TaskList taskList, LocalDateTime created, LocalDateTime updated) {
+    public Task(UUID id, String title, String description, LocalDateTime dueDate, TaskStatus status, TaskPriority priority, TaskStatus taskStatus, TaskPriority taskPriority, TaskList taskList, LocalDateTime created, LocalDateTime updated) {
         this.updated = updated;
         this.created = created;
         this.taskList = taskList;

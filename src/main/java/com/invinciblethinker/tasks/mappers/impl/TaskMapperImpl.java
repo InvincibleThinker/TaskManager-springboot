@@ -21,18 +21,18 @@ public class TaskMapperImpl implements TaskMapper {
                 null,
                 null
 
-                );
+        );
     }
 
     @Override
     public TaskDto toDto(Task task) {
         return new TaskDto(
-               task.getId(),
-               task.getTitle(),
-               task.getDescription(),
-               task.getDueDate(),
-               task.getPriority(),
-               task.getStatus()
+                task.getId(),
+                task.getTitle(),
+                task.getDescription(),
+                task.getDueDate(),
+                task.getPriority(),
+                task.getStatus()
         );
     }
 }
